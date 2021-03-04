@@ -62,6 +62,16 @@ git switch - (return)
                              git push --set-upstream origin <new name>
                              git push origin --delete <old name>
 7. rebase没搞懂…
+		用于重写commit
+	```
+	git rebase --interactive 'xxxx&^'
+	# pick, edit, reword…
+	git rebase (--continue/--abort)
+	
+	#注意 一定要force push
+	git push --force
+	```
+
 
 https://www.atlassian.com/git/tutorials/merging-vs-rebasing#:~:text=Merging%20is%20a%20safe%20option,onto%20the%20tip%20of%20master%20.
 
