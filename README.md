@@ -96,8 +96,20 @@ visual studio code
 ```
 git config --global core.editor "code --wait"
 ```
-
 sublime text
 ```
 git config --global core.editor "'C:/Program Files/Sublime Text 3/subl.exe' -w"
+```
+设置commit template
+~/.gitmessage.txt中添加想要提醒自己commit的时候要写的内容
+```
+# Hint for commit
+# 1. <title> 与 <description> 当中要空一行 	 Separate subject from body with a blank line
+# 2. <title> 不超过 50 字，最多别超过 70 	 Limit the subject line to 50 characters
+# 3. <title> 首词 首字 大写 				Capitalize the subject line
+# 4. 不要用句号结尾 						 Do not end the subject line with a period
+# 5. 命令式语气								Use the imperative mood in the subject line
+# 6. <description> 不超过 72 字				Wrap the body at 72 characters
+# 7. Use the body to explain what and why vs. how
+
 ```
