@@ -1,5 +1,7 @@
 ### My github training
 
+#### following are the study memo of Pro git
+
 VCS - Version Control System
 RCS - Revision Control System
 CVCS - Centralized Version Control System
@@ -13,37 +15,37 @@ Staged
 Committed - safely stored in local database
 
 ### Chapter 2
-Git Basics
-	1. init/clone
-	2. Tracked/Untracked, staging, commit
-	Track: 
-		git status
-		/git status -s(short)
-		git add
-	Staging (一定是已经tracked文件)
-		git commit 无commit = not staged
-	ignoring files
-	git diff --staged/
-	
-	
-	3. Git log查看历史修改记录
-	doesn't show all the branches all the time
-	4. undo
-		a. commit - git commit --amend
-		b. unstaging a Staged file - git reset HEAD <file> 注: 2.23.0变成了restore
-		c. revert - git checkout -- <files>
-	5. remote
-	查看所有remote内容 - git remote show <remote>
-		a. fetch and pull
-		fetch只是把其他branch拉下来不做merge
-		pull自动fetch并且merge到current branch = fetch + merge
-		b. push - git push <remote> <branch>
-	6. Tagging标记(eg mark release version)
-	Tag要单独push - git push origin <tagname>
+## Git Basics
+1. init/clone
+2. Tracked/Untracked, staging, commit
+Track: 
+	git status
+	/git status -s(short)
+	git add
+Staging (一定是已经tracked文件)
+	git commit 无commit = not staged
+ignoring files
+git diff --staged/
+
+
+3. Git log查看历史修改记录
+doesn't show all the branches all the time
+4. undo
+	a. commit - git commit --amend
+	b. unstaging a Staged file - git reset HEAD <file> 注: 2.23.0变成了restore
+	c. revert - git checkout -- <files>
+5. remote
+查看所有remote内容 - git remote show <remote>
+	a. fetch and pull
+	fetch只是把其他branch拉下来不做merge
+	pull自动fetch并且merge到current branch = fetch + merge
+	b. push - git push <remote> <branch>
+6. Tagging标记(eg mark release version)
+Tag要单独push - git push origin <tagname>
 		
 
 ### Chapter 3
-Branching - diverge from the main line of development and continue work without messing with that main line
+## Branching - diverge from the main line of development and continue work without messing with that main line
 他只记录commit和文件标签，然后通过一个head来指向当前branch内容(master 也是个branch)
 	1. 创建branch - git branch <branch name>
 	创建branch并切换 - git checkout -b <new branch name>
@@ -64,7 +66,7 @@ Branching - diverge from the main line of development and continue work without 
 	https://www.atlassian.com/git/tutorials/merging-vs-rebasing#:~:text=Merging%20is%20a%20safe%20option,onto%20the%20tip%20of%20master%20.
 
 ### Chapter 5
-Distrubuted workflows
+## Distrubuted workflows
 如何控制多分支情况
 Second developer must merge in the first one's work before pushing changes up.
 5.1 给出不同解决方案，典型: push master的工作永远是一个人做的，其他分支branch的人不能擅自push/merge
@@ -72,11 +74,11 @@ Second developer must merge in the first one's work before pushing changes up.
       活用fork, 可以fork自己的代码给别人
 
 ### chapter 6 
-实际运用
+## 实际运用
 webhook
 
 ### Chapter 7 
-Git tools
+## Git tools
 stash = 不上传的commit
 	git stash
 	git stash apply
