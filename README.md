@@ -47,23 +47,23 @@ Tag要单独push - git push origin <tagname>
 ### Chapter 3
 ## Branching - diverge from the main line of development and continue work without messing with that main line
 他只记录commit和文件标签，然后通过一个head来指向当前branch内容(master 也是个branch)
-	1. 创建branch - git branch <branch name>
-	创建branch并切换 - git checkout -b <new branch name>
-	2. 切换branch - git checkout <branch name> 注: 2.23开始变成了switch
-	git switch test-branch
-	git switch -c new-branch (c = create)
-	git switch - (return)
-	3. 删除branch - git branch -d <branch name>
-	强行删除 - git branch -D <branch name> 
-	4. 查看branch - git branch
-	                 - git branch -v
-	5. 查看是否merge - git branch --merged/--no-merged
-	6. 更换branch名 - git branch --move <old name> <new name>
-	                             git push --set-upstream origin <new name>
-	                             git push origin --delete <old name>
-	7. rebase没搞懂…
-	
-	https://www.atlassian.com/git/tutorials/merging-vs-rebasing#:~:text=Merging%20is%20a%20safe%20option,onto%20the%20tip%20of%20master%20.
+1. 创建branch - git branch <branch name>
+创建branch并切换 - git checkout -b <new branch name>
+2. 切换branch - git checkout <branch name> 注: 2.23开始变成了switch
+git switch test-branch
+git switch -c new-branch (c = create)
+git switch - (return)
+3. 删除branch - git branch -d <branch name>
+强行删除 - git branch -D <branch name> 
+4. 查看branch - git branch
+                 - git branch -v
+5. 查看是否merge - git branch --merged/--no-merged
+6. 更换branch名 - git branch --move <old name> <new name>
+                             git push --set-upstream origin <new name>
+                             git push origin --delete <old name>
+7. rebase没搞懂…
+
+https://www.atlassian.com/git/tutorials/merging-vs-rebasing#:~:text=Merging%20is%20a%20safe%20option,onto%20the%20tip%20of%20master%20.
 
 ### Chapter 5
 ## Distrubuted workflows
